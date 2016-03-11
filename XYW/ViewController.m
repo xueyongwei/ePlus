@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-
+#define 整形 int
+#define 空 void
 @interface ViewController ()
 
 @end
@@ -16,8 +17,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    整形 数字 = 1;
+    输出日志(@"%d",数字);
     // Do any additional setup after loading the view, typically from a nib.
 }
+
+-(空)输出一个数字:(整形)数字
+{
+    输出日志(@"%d",数字);
+}
+
+
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

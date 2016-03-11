@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		47BBFBAA1C88292A00010672 /* XYW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XYW.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		47BBFBAA1C88292A00010672 /* ePlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ePlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47BBFBAE1C88292A00010672 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		47BBFBB01C88292A00010672 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		47BBFBB11C88292A00010672 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +26,7 @@
 		47BBFBB91C88292A00010672 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47BBFBBC1C88292A00010672 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		47BBFBBE1C88292B00010672 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47BBFBC41C88293E00010672 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +51,7 @@
 		47BBFBAB1C88292A00010672 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				47BBFBAA1C88292A00010672 /* XYW.app */,
+				47BBFBAA1C88292A00010672 /* ePlus.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -75,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				47BBFBAE1C88292A00010672 /* main.m */,
+				47BBFBC41C88293E00010672 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -82,9 +84,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		47BBFBA91C88292A00010672 /* XYW */ = {
+		47BBFBA91C88292A00010672 /* ePlus */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 47BBFBC11C88292B00010672 /* Build configuration list for PBXNativeTarget "XYW" */;
+			buildConfigurationList = 47BBFBC11C88292B00010672 /* Build configuration list for PBXNativeTarget "ePlus" */;
 			buildPhases = (
 				47BBFBA61C88292A00010672 /* Sources */,
 				47BBFBA71C88292A00010672 /* Frameworks */,
@@ -94,9 +96,9 @@
 			);
 			dependencies = (
 			);
-			name = XYW;
+			name = ePlus;
 			productName = XYW;
-			productReference = 47BBFBAA1C88292A00010672 /* XYW.app */;
+			productReference = 47BBFBAA1C88292A00010672 /* ePlus.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -114,7 +116,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 47BBFBA51C88292A00010672 /* Build configuration list for PBXProject "XYW" */;
+			buildConfigurationList = 47BBFBA51C88292A00010672 /* Build configuration list for PBXProject "ePlus" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -127,7 +129,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				47BBFBA91C88292A00010672 /* XYW */,
+				47BBFBA91C88292A00010672 /* ePlus */,
 			);
 		};
 /* End PBXProject section */
@@ -262,10 +264,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = $SRCROOT/XYW/PrefixHeader.pch;
 				INFOPLIST_FILE = XYW/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xyw.XYW;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ePlus;
 			};
 			name = Debug;
 		};
@@ -273,17 +276,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = $SRCROOT/XYW/PrefixHeader.pch;
 				INFOPLIST_FILE = XYW/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xyw.XYW;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ePlus;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		47BBFBA51C88292A00010672 /* Build configuration list for PBXProject "XYW" */ = {
+		47BBFBA51C88292A00010672 /* Build configuration list for PBXProject "ePlus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				47BBFBBF1C88292B00010672 /* Debug */,
@@ -292,13 +296,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		47BBFBC11C88292B00010672 /* Build configuration list for PBXNativeTarget "XYW" */ = {
+		47BBFBC11C88292B00010672 /* Build configuration list for PBXNativeTarget "ePlus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				47BBFBC21C88292B00010672 /* Debug */,
 				47BBFBC31C88292B00010672 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
